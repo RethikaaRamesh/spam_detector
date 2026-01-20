@@ -25,9 +25,8 @@ Pandas
 Flask
 
 HTML & CSS
-
-##📁 Project Structure
-
+📁 Project Structure
+'''text
 spam_detector/
 │
 ├── dataset/
@@ -85,5 +84,6 @@ numpy
 
 Rethikaa Ramesh
 🔗 GitHub: https://github.com/RethikaaRamesh
+
 
 
