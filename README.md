@@ -26,22 +26,25 @@ Flask
 
 HTML & CSS
 
-📁 Project Structure
-/*
+##📁 Project Structure
+
 spam_detector/
+│
+├── dataset/
+│ ├── SMSSpamCollection
+│ └── spam.csv
+│
+├── templates/
+│ └── index.html
 │
 ├── app.py
 ├── train_model.py
+├── download_dataset.py
 ├── spam_model.pkl
 ├── vectorizer.pkl
 ├── requirements.txt
-├── README.md
-│
-├── templates/
-│   └── index.html
-│
-└── static/
-*/
+└── README.md
+
 ▶️ How to Run the Project
 1️⃣ Install dependencies
 pip install -r requirements.txt
@@ -82,4 +85,5 @@ numpy
 
 Rethikaa Ramesh
 🔗 GitHub: https://github.com/RethikaaRamesh
+
 
