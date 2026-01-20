@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS Spam Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .spam-high {
+            color: red;
+            font-weight: bold;
+        }
+        .spam-medium {
+            color: orange;
+            font-weight: bold;
+        }
+        .spam-low {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>📩 SMS Spam Detection System</h2>
+
+<form method="POST">
+    <textarea name="message" placeholder="Enter SMS message...">{{ message }}</textarea><br>
+    <button type="submit">Check Message</button>
+</form>
+
+{% if prediction %}
+<div class="result">
+    <h3>Prediction: {{ prediction }}</h3>
+
+    {% if spam_level == "HIGH" %}
+        <p class="spam-high">Spam Level: HIGH</p>
+    {% elif spam_level == "MEDIUM" %}
+        <p class="spam-medium">Spam Level: MEDIUM</p>
+    {% else %}
+        <p class="spam-low">Spam Level: LOW</p>
+    {% endif %}
+
+</div>
+{% endif %}
+
+</body>
+</html>
