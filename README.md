@@ -27,6 +27,7 @@ Flask
 HTML & CSS
 
 📁 Project Structure
+/*
 spam_detector/
 │
 ├── app.py
@@ -40,7 +41,7 @@ spam_detector/
 │   └── index.html
 │
 └── static/
-
+*/
 ▶️ How to Run the Project
 1️⃣ Install dependencies
 pip install -r requirements.txt
@@ -81,3 +82,4 @@ numpy
 
 Rethikaa Ramesh
 🔗 GitHub: https://github.com/RethikaaRamesh
+
