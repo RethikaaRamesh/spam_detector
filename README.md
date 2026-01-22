@@ -43,7 +43,7 @@ spam_detector/
 ├── vectorizer.pkl
 ├── requirements.txt
 └── README.md
-
+```
 ▶️ How to Run the Project
 1️⃣ Install dependencies
 pip install -r requirements.txt
@@ -84,6 +84,7 @@ numpy
 
 Rethikaa Ramesh
 🔗 GitHub: https://github.com/RethikaaRamesh
+
 
 
 
